@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package queues
 
 type Node struct {
 	value any
@@ -53,13 +51,13 @@ func (q *Queue) Peek() any {
 	return q.head.value
 }
 
-func _main() {
-	q := CreateQueue()
-	q.Enqueue(5)
-	q.Enqueue('a')
-	q.Enqueue("Futa")
-	fmt.Println(q.head, q.tail, q.length)
-	oldHeadValue := q.Dequeue()
-	fmt.Println(oldHeadValue)
-	fmt.Println(q.head, q.tail, q.length)
-}
+// func main() {
+// 	q := CreateQueue()
+// 	q.Enqueue(5)
+// 	q.Enqueue('a')
+// 	q.Enqueue("Futa")
+// 	fmt.Println(q.head, q.tail, q.length)
+// 	oldHeadValue := q.Dequeue()
+// 	fmt.Println(oldHeadValue)
+// 	fmt.Println(q.head, q.tail, q.length)
+// }

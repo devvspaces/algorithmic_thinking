@@ -1,11 +1,6 @@
 package main
 
-import (
-	"flag"
-	"fmt"
-)
-
-func search(a []uint, value uint) bool {
+func LinearSearch(a []uint, value uint) bool {
 	for _, v := range a {
 		if v == value {
 			return true
@@ -14,22 +9,14 @@ func search(a []uint, value uint) bool {
 	return false
 }
 
-var searchValue uint
+// func main() {
 
-func init() {
-	flag.UintVar(&searchValue, "s", 0, "search for the number in array")
-}
+// 	searchArray := []uint{1, 2, 3, 4, 5, 6, 1, 5, 3, 10, 2, 5, 19}
 
-func main() {
-
-	flag.Parse()
-
-	searchArray := []uint{1, 2, 3, 4, 5, 6, 1, 5, 3, 10, 2, 5, 19}
-
-	result := search(searchArray, searchValue)
-	if result {
-		fmt.Println("Found value in array")
-	} else {
-		fmt.Println("Value not found in array")
-	}
-}
+// 	result := search(searchArray, searchValue)
+// 	if result {
+// 		fmt.Println("Found value in array")
+// 	} else {
+// 		fmt.Println("Value not found in array")
+// 	}
+// }

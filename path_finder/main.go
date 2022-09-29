@@ -1,22 +1,20 @@
-package main
-
-import "fmt"
+package path_finder
 
 type Point struct {
 	x int
 	y int
 }
 
-var maze = []string{
-	"x xxxxxxxx x",
-	"x        x x",
-	"xxxx    xx x",
-	"x        x x",
-	"x xxxxxxxx x",
-	"x          x",
-	"x          x",
-	"xxxxxxxxxxxx",
-}
+// var maze = []string{
+// 	"x xxxxxxxx x",
+// 	"x        x x",
+// 	"xxxx    xx x",
+// 	"x        x x",
+// 	"x xxxxxxxx x",
+// 	"x          x",
+// 	"x          x",
+// 	"xxxxxxxxxxxx",
+// }
 
 var dirs = [][]int{
 	{-1, 0},
@@ -63,7 +61,7 @@ func walk(maze []string, wall string, end Point, curr Point, seen [][]bool, path
 
 }
 
-func find_path(maze []string, wall string, start Point, end Point) []Point {
+func FindPath(maze []string, wall string, start Point, end Point) []Point {
 
 	seen := [][]bool{}
 
@@ -81,13 +79,13 @@ func find_path(maze []string, wall string, start Point, end Point) []Point {
 
 }
 
-func main() {
+// func main() {
 
-	start := Point{x: 10, y: 0}
-	end := Point{x: 1, y: 0}
-	path := find_path(
-		maze, "x", start, end,
-	)
-	fmt.Println(path)
+// 	start := Point{x: 10, y: 0}
+// 	end := Point{x: 1, y: 0}
+// 	path := find_path(
+// 		maze, "x", start, end,
+// 	)
+// 	fmt.Println(path)
 
-}
+// }

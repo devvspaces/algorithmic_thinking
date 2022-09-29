@@ -1,0 +1,19 @@
+mode: set
+algo/sort/bubble.go:3.26,4.30 1 1
+algo/sort/bubble.go:4.30,5.47 1 1
+algo/sort/bubble.go:5.47,7.28 2 1
+algo/sort/bubble.go:7.28,11.5 3 1
+algo/sort/quicksort.go:3.47,7.27 3 1
+algo/sort/quicksort.go:16.2,20.12 4 1
+algo/sort/quicksort.go:7.27,8.22 1 1
+algo/sort/quicksort.go:8.22,13.4 4 1
+algo/sort/quicksort.go:24.36,26.14 1 1
+algo/sort/quicksort.go:30.2,33.20 3 1
+algo/sort/quicksort.go:26.14,28.3 1 1
+algo/sort/quicksort.go:37.27,41.2 3 1
+algo/utils/service.go:5.29,6.22 1 1
+algo/utils/service.go:9.2,9.22 1 1
+algo/utils/service.go:14.2,14.13 1 1
+algo/utils/service.go:6.22,8.3 1 1
+algo/utils/service.go:9.22,10.16 1 1
+algo/utils/service.go:10.16,12.4 1 1
